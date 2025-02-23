@@ -10,7 +10,6 @@ public class ArrayList<T> implements List<T> {
     maxSize = n;
     nodes = (T[]) new Object[n];
     current = -1;
-    this.size = size;
   }
 
   public void findFirst() {
@@ -80,5 +79,7 @@ public class ArrayList<T> implements List<T> {
   public boolean last() {
     return current == size - 1;
   }
+  
+  
 
 }
